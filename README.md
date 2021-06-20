@@ -2,11 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-!Project_1/Images/Diagram.png
+!Project_1/Diagram.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
 
-- Unit_13_ELK_Project_1/Ansible/
+- Project_1/Ansible/
 
 This document contains the following details:
 - Description of the Topologu
@@ -32,7 +32,10 @@ The configuration details of each machine may be found below.
 
 | Name               | Function   | IP Address                               | Operating System |
 |--------------------|------------|------------------------------------------|------------------|
-| JumpBoxProvisioner | Gateway    | Public:137.135.25.164  Private: 10.0.0.4 | Linux            | 
+| JumpBoxProvisioner | Gateway    | Public:
+
+
+7.135.25.164  Private: 10.0.0.4 | Linux            | 
 | Web-1              | Server     | Public: N/A  Private:10.0.0.7            | Linux            |
 | Web-2              | Server     | Public: N/A  Private:10.0.0.6            | Linux            |
 | Elk-1              | Monitoring | Public:40.85.185.162  Private:10.1.0.4   | Linux            |
