@@ -1,0 +1,23 @@
+Domain: Logging and Monitoring
+Question 3: Escalating Security Events
+How do you determine if a security event or alert is important enough for escalation?
+Restate the Problem
+Provide a Concrete Example Scenario
+
+
+What kinds of events and alerts did you encounter in Project 1?
+Which of these events was most interesting or suspicious?
+Why was the event suspicious? What led you to investigate it?
+Explain the Solution Requirements
+
+
+What do you need to figure out in order to determine if this event is worth escalating?
+Explain the Solution Details
+
+
+How did you use Kibana to find this information?
+Identify Advantages and Disadvantages of the Solution
+
+
+How confident are you in your conclusion?
+What additional data would be useful to determine if your conclusions are correct?
