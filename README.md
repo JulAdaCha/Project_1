@@ -44,10 +44,10 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- Local host IP Address and port 80 (HTTP)
+- Local host IP Address and port 80 (HTTP). Public IP Address 137.135.25.164
 
 Machines within the network can only be accessed by the ansible container through docker located on the Jup Box.
-- The ELK-1 server is accessed by the ansible container inside theJumpBoxProvisioner using port 22 (SSH). 
+- The ELK-1 server is accessed by the ansible container inside theJumpBoxProvisioner using port 22 (SSH)
 - The Kibana website is accessed using the ELK-1 public IP Address 40.85.185.162 using port 80 (HTTP)
 
 A summary of the access policies in place can be found in the table below.
