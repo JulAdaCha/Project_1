@@ -25,8 +25,8 @@ Load balancing ensures that the application will be highly available to customer
 -If a server goes down, or needs to be updated, services will continue without interuption. The advantage of using a jump box only the jump box can access the virtual network via ssh. 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
-- Filebeat monitors teh log files or locations specfied, collects log events and forwards them eiter to Elasticsearch or Logstash for indexing.
-- Metricbeat is a metric shipper for monitoring a system and the processes running the system.
+- Filebeat monitors the log file data then combines the data into monitored clusters. Once a cluster is created it is shipped to Elasticsearch for indexing and analysis. Kibana is used to ensure the log files are being monitored and indexed and to visualize the analyzed data. 
+- Metricbeat monitors metrics and statistics data. Once collected this data is shipped to Elasticsearch or Logstash for indexing and analysis. Kibana is used to ensure the metrics are being indexed and visualizes the analyzed data. 
 
 The configuration details of each machine may be found below.
 
