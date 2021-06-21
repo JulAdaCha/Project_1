@@ -115,9 +115,9 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the playbook YAML file to an Ansible directory.
-- Update the host file to include webservers and elk.
-- Run the playbook, and navigate to Kibana to check that the installation worked as expected (http://[localhost]:5601/app/kibana).
+- Copy /ect/ansible/[current .deb file] to /etc/ansible/roles
+- Update /etc/ansible/hosts and include webservers and elk as well as VM's Web-1, Web-1 and Web-3 with their private IP Addresses
+- Run the playbook, then open Kibana to ensure the connection was installed. To access Kibana type http://[localhost]:5601/app/kibana (http://40.85.185.162:5601/app/kibana)
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it? 
