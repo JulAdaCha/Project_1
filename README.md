@@ -108,8 +108,8 @@ We have installed the following Beats on these machines:
 | Web-3 | Private:10.0.0.5 |
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat collects log data and shows them in the mointoring clusters.
-- Metricbeat collects metrics and statistics and shows them in the output specified into Elasticsearch or Logstash. 
+- Filebeat collects log files moves them into monitored clusters then ships the monitored clusters to Elasticsearch. Kibana verifies that Elasticsearch is running correctly and then provides visualization of the monitored data. 
+- Metricbeat collects metrics and statistics from the systems and services running on a server such as Apache. Once data is collected it is shipped to either Elasticsearch or Logstash. Kibana provides visualization of the monitored servers.  
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
