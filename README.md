@@ -92,6 +92,13 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines:
 - Filebeat
+
+| Name  | IP Address       |                
+|-------|------------------|
+| Web-1 | Private:10.0.0.7 |
+| Web-2 | Private:10.0.0.6 |
+| Web-3 | Private:10.0.0.5 |
+
 - Metricbeat
 
 | Name  | IP Address       |                
