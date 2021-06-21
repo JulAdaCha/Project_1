@@ -63,8 +63,10 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it is fast, easy and prevents any overlooked vulneerabilities.
-- Fast and easy set-up and added security.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it is fast, easy and prevents any overlooked vulnerabilities.
+- Fast and easy set-up
+- Automation of daily tasks
+- Additional security
 
 The playbook implements the following tasks:
 - Install docker.io
@@ -72,6 +74,8 @@ The playbook implements the following tasks:
 - Download and start docker ansible container
 - Download and start docker elk container
 - Download images
+- Open ports 5601:5601, 9200:9200 and 5044:5044
+- Increase RAM by using vm.max_count 262144
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
