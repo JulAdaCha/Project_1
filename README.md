@@ -78,6 +78,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
+
 | Name  | IP Address       |                
 |-------|------------------|
 | Web-1 | Private:10.0.0.7 |
@@ -87,6 +88,7 @@ This ELK server is configured to monitor the following machines:
 We have installed the following Beats on these machines:
 - Filebeat
 - Metricbeat
+
 | Name  | IP Address       |                
 |-------|------------------|
 | Web-1 | Private:10.0.0.7 |
