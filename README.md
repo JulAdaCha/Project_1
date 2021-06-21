@@ -129,5 +129,5 @@ Answer the following questions to fill in the blanks:
 - Which URL do you navigate to in order to check that the ELK server is running?
      http://[localhost]:5601/app/kibana
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
-- ansible_playbook [filename.yml]
+As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
+- ansible_playbook [filename.yml] (ansible playbook /etc/ansible/filebeat-playbook.yml)
