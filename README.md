@@ -30,15 +30,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-| Name               | Function   | IP Address                               | Operating System |
-|--------------------|------------|------------------------------------------|------------------|
-| JumpBoxProvisioner | Gateway    | Public:
-
-
-7.135.25.164  Private: 10.0.0.4 | Linux            | 
-| Web-1              | Server     | Public: N/A  Private:10.0.0.7            | Linux            |
-| Web-2              | Server     | Public: N/A  Private:10.0.0.6            | Linux            |
-| Elk-1              | Monitoring | Public:40.85.185.162  Private:10.1.0.4   | Linux            |
+| Name               | Function   | IP Address                                | Operating System |
+|--------------------|------------|-------------------------------------------|------------------|
+| JumpBoxProvisioner | Gateway    | Public: 137.135.25.164  Private: 10.0.0.4 | Linux            | 
+| Web-1              | Server     | Public: N/A  Private:10.0.0.7             | Linux            |
+| Web-2              | Server     | Public: N/A  Private:10.0.0.6             | Linux            |
+| Web-3 (Redundancy) | Server     | Public: N/A  Private:10.0.0.5             | Linux            |
+| Elk-1              | Monitoring | Public: 40.85.185.162  Private:10.1.0.4   | Linux            |
 
 
 ### Access Policies
@@ -58,6 +56,7 @@ A summary of the access policies in place can be found in the table below.
 | JumpBoxProvisioner | Yes       | 137.135.25.164 10.0.0.4 |
 | Web-1              | No        | 10.0.0.7                |
 | Web-2              | No        | 10.0.0.6                |
+| Web-3              | No        | 10.0.0.5                |
 | ELK-1              | Yes       | 40.85.185.162 10.1.0.4  |
 
 
