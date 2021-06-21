@@ -117,14 +117,17 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy /ect/ansible/[current .deb file] to /etc/ansible/roles
 - Update /etc/ansible/hosts and include webservers and elk as well as VM's Web-1, Web-1 and Web-3 with their private IP Addresses
-- Run the playbook, then open Kibana to ensure the connection was installed. To access Kibana type http://[localhost]:5601/app/kibana (http://40.85.185.162:5601/app/kibana)
+- Run the playbook, then open Kibana to ensure the connection was installed. To access Kibana type url http://[localhost]:5601/app/kibana (http://40.85.185.162:5601/app/kibana)
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it? 
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
-- /etc/ansible/host
-- 
-- http://[localhost]:5601/app/kibana Which URL do you navigate to in order to check that the ELK server is running?
+  /etc/ansible/install-elk.yml
+- _Which file do you update to make Ansible run the playbook on a specific machine?
+  /etc/ansible/hosts
+-   How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+  /etc/ansible/filebeat-config.yml
+-  Which URL do you navigate to in order to check that the ELK server is running?
+  http://[localhost]:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 - ansible_playbook [filename.yml]
